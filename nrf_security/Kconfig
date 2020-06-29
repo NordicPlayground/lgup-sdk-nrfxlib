@@ -1290,6 +1290,11 @@ endif # MBEDTLS_RSA_C
 
 menu "SHA   - Secure Hash Algorithm"
 
+config MBEDTLS_MD5_C
+	bool "MD5 hash functionality"
+	help
+		MD5 hash functionality.
+
 config MBEDTLS_SHA1_C
 	bool
 	prompt "SHA-1 hash functionality"
