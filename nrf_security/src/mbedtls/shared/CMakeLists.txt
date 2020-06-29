@@ -6,7 +6,9 @@
 # The purpose of this file is to provice a set of debug commands to nrf security
 # module.
 
+if(TARGET platform_cc310)
 get_target_property(NRF_PLATFORM_CC310_INCLUDE_PATH platform_cc310 BASE_INCLUDE_PATH)
+endif()
 
 nrf_security_debug("######### Creating shared noglue library #########")
 

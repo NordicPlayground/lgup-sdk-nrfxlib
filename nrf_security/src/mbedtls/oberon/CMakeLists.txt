@@ -6,7 +6,9 @@
 
 get_target_property(NRF_OBERON_MBEDTLS_INCLUDE_PATH mbedcrypto_oberon_mbedtls_imported BASE_INCLUDE_PATH)
 get_target_property(NRF_OBERON_INCLUDE_PATH mbedcrypto_oberon_imported BASE_INCLUDE_PATH)
+if(TARGET platform_cc310)
 get_target_property(NRF_PLATFORM_CC310_INCLUDE_PATH platform_cc310 BASE_INCLUDE_PATH)
+endif()
 
 nrf_security_debug("######### Creating nrf_oberon noglue library #########")
 
