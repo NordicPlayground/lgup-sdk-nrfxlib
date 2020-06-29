@@ -1020,6 +1020,11 @@ endif # MBEDTLS_RSA_C
 menu "SHA   - Secure Hash Algorithm"
 	depends on (CC310_BACKEND || OBERON_BACKEND || MBEDTLS_VANILLA_BACKEND)
 
+config MBEDTLS_MD5_C
+	bool "MD5 hash functionality"
+	help
+		MD5 hash functionality.
+
 config MBEDTLS_SHA1_ALT
 	bool
 
